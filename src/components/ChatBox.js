@@ -49,6 +49,7 @@ function ChatBox({ id }) {
             doc.data().recieverId === currentUser.uid
           ) {
             messages.push(doc.data());
+            console.log(doc.data().date.toDate());
           }
         });
 
@@ -102,14 +103,9 @@ function ChatBox({ id }) {
                 <p ref={scrollRef} key={message.messageId}>
                   {message.text}
                 </p>
-                {/* {recieverUser.id === paramId.id && (
-                  <p>{recieverUser.username}</p>
-                )} */}
                 <p className="time">
-                  {new Date(message.date?.nanoseconds / 100000)
-                    .toString()
-                    .slice(0, 25)}
-                  {/* {new FormData(message.date)} */}
+                  {" "}
+                  {message.date.toDate().toString().slice(0, 25)}
                 </p>
               </div>
             ) : (
