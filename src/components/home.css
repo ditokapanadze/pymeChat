@@ -24,6 +24,7 @@
   background-color: rgba(238, 237, 237, 0.767);
   width: 30%;
   border-radius: 0 0 0 10px;
+  overflow-y: auto;
 }
 .user {
   background-color: white;
