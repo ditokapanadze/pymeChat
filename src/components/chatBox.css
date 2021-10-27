@@ -60,10 +60,14 @@
 .sent:hover .delete__btn {
   display: block;
 }
+.chat__body > :first-child {
+  margin-top: auto;
+}
 .chat__body {
   display: flex;
   flex-direction: column;
   height: 700px;
+  /* justify-content: flex-end; */
   flex-direction: column;
   width: 100%;
 }
